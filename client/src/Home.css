@@ -1,0 +1,28 @@
+.divbody{
+    background-color: #1a1818;
+}
+
+.logo {
+    height: 60px;
+    animation: neonGlow 1.7s ease-in-out infinite alternate;
+    filter: drop-shadow(0 0 8px #00ff66);
+    transition: filter 0.5s ease-in-out;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 5px #00ff99)
+            drop-shadow(0 0 10px #00ffcc);
+}
+
+@keyframes neonGlow {
+    0% {
+        filter: drop-shadow(0 0 4px #00ff66)
+                drop-shadow(0 0 8px #00ff66)
+                drop-shadow(0 0 10px #00ff66);
+      }
+      50% {
+        filter: drop-shadow(0 0 10px #00ff66)
+                drop-shadow(0 0 12px #00ff99)
+                drop-shadow(0 0 15px #00ffcc);
+      }
+}
